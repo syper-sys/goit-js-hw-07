@@ -11,9 +11,9 @@ formElem.addEventListener(`submit`, (e)=>{
 
     if (formValues.email === `` || formValues.password === ``) {
         alert('All form fields must be filled in');
+    }else {
+        console.log(formValues);
     }
-
-    console.log(formValues);
 
     formElem.reset();
 });
